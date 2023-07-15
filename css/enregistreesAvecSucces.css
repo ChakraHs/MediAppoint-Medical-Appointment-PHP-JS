@@ -1,0 +1,48 @@
+.RdvSuccus{
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.RdvSuccus h2{
+    color: #4CAF50;
+}
+.RdvSuccus h3{
+    color: red;
+}
+.RdvSuccus button{
+	cursor: pointer;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.1rem;
+	user-select: none;
+	background-color: #4CAF50;
+	padding: 0px;
+	color: #ffffff;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 0.2rem;
+	min-height: 4.12rem;
+	font-size: 1.4rem;
+	max-width: 60vw;
+	min-width: 40vw;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+.RdvSuccus button a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

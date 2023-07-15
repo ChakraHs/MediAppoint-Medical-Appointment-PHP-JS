@@ -1,0 +1,159 @@
+
+.information{
+    background-color: transparent;
+    width: 80vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+	margin-top: 3vh;
+}
+
+.information-container{
+    width: 100%;
+    height: 88vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.titre-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-titre{
+    color: red;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    min-height: 18vh;
+    margin-top: 18px;
+}
+.info-con h4{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    font-weight: bold;
+}
+.info-con .un-input{
+    width: 90%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.info-con .un-input input{
+    border: 0;
+    outline: 0;
+    width: 45%;
+    height: 50%;
+    background-color: transparent;
+    border-bottom: 1px solid #B7B7B7;
+    text-align:buttom;
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+}
+.info-con .deux-inputs{
+    width: 90%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-con .deux-inputs .input-con{
+    width: 45%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+}
+.info-con .deux-inputs .input-con input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    border-bottom: 1px solid #B7B7B7;
+    text-align:buttom;
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+
+}
+::placeholder {
+    color: #B7B7B7;
+    font-weight: bold;
+}
+
+.deux-inputs-check{
+    width: 90%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-edit-container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: red;
+}
+
+.enregistre-btn-container{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enregistre-btn{
+    background-color: #AA4DC8;
+    border: 0;
+    width: 10vw;
+    height: 6vh;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 0 5px 0 rgb(41 85 115 / 21%);
+    transition: all 200ms ease-in-out;
+}
+.enregistre-btn:hover{
+    background-color: #b952db;
+}
+
+.red{
+    color: red;
+    margin-top: 10px;
+}

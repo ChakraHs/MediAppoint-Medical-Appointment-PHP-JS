@@ -1,0 +1,155 @@
+.hero-bottom {
+    margin: 0 auto;
+    width: 100%;
+    font-family: Arial, Helvetica;
+    background-color: white;
+    background-color: white;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 40px;
+    color: black;
+}
+
+.th {
+    display: flex;
+}
+
+.title .h,
+.title .j {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.title .h {
+    color: rgb(230, 105, 55);
+}
+
+.title .j {
+    color: #08A5DC;
+}
+
+.content12{
+    width: 100vw;
+    display: flex;
+}
+
+.content1 {
+    width: 50%;
+    background-color: transparent;
+    height: 300px;
+}
+
+.simplicite {
+    width: 50%;
+    background-color: transparent;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simplicite-content {
+    background-color: transparent;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+
+.qualite {
+    width: 50%;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.content2 {
+    width: 50%;
+    background-color: transparent;
+    height: 300px;
+}
+
+.rapidite {
+    width: 50%;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.securite {
+    width: 50%;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.content1 .img,
+.content2 .img {
+    width: 60%;
+    height: 60%;
+    display: block;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.content1 img,
+.content2 img {
+    width: 100%;
+}
+
+.content1 h1,
+.content2 h1 {
+    width: 50%;
+    height: 12%;
+    font-size: 30px;
+    color: #08A5DC;
+}
+
+.content1 p,
+.content2 p {
+    width: 70%;
+    height: 28%;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+@media (max-width: 550px) {
+    .content1 .content2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .simplicite,
+    .rapidite,
+    .qualite,
+    .securite {
+        width: 100%;
+    }
+}

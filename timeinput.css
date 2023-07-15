@@ -1,0 +1,91 @@
+
+
+.rows{
+    display: flex;
+}
+.rows{
+    display: flex;
+    background-color: transparent;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+}
+.rows label{
+    display: flex;
+    flex-direction: column;
+}
+.rows div{
+    display: flex;
+    width: 10vw;
+}
+
+.rows ul{
+    width: 10vw;
+    height: 53vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #e2e2e2;
+}
+.rows ul li{
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:rgb(33, 199, 199);
+    font-weight: 400;
+}
+.rows ul li:hover{
+    background-color: #F4F4F4;
+    color: #616161;
+}
+
+.rows ul .list-header{
+    margin-bottom: 10px;
+    color: rgb(83, 81, 81);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rows ul .list-header:hover{
+    color: rgb(83, 81, 81);
+    background-color: transparent;
+    cursor:default;
+}
+
+[type=radio] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* IMAGE STYLES */
+
+[type=radio] + .h-d {
+	cursor: pointer;
+	float: left;
+}
+
+/* CHECKED STYLES */
+
+[type=radio]:checked + .h-d{
+	border: 1px solid #616161;
+    background-color: #F4F4F4;
+}
+
+.h-d{
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

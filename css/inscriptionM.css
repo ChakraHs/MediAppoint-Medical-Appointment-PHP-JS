@@ -1,0 +1,171 @@
+:root {
+    --couleur-darkgreen: #4d7368;
+    --couleur-lightcyan: #d9e5e1;
+    --couleur-darkblue: #000038;
+    --couleur-green: #8fbf78;
+    --couleur-white: white;
+    --couleur-black: black;
+    --fontfamily-poppins: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--couleur-lightcyan);
+}
+
+.flex {
+    display: flex;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    background-color: var(--couleur-green);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.inp {
+    height: 25px;
+    width: 350px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 1em;
+    font-family: var(--fontfamily-poppins);
+}
+
+html {
+    font-family: var(--fontfamily-poppins);
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--couleur-lightcyan);
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--couleur-green);
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 10vh 90vh;
+}
+
+.blue {
+    color: var(--couleur-darkblue);
+}
+
+.layoutP {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 90vh;
+}
+
+header {
+    padding: 2rem 5rem;
+    justify-content: space-between;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.inscription {
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+label {
+    display: block;
+    color: var(--couleur-darkgreen);
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2em;
+    margin: 1em 0;
+}
+
+.title {
+    color: var(--couleur-darkgreen);
+}
+
+.sous-title {
+    margin-top: 2em;
+    font-size: 1.1rem;
+    color: var(--couleur-darkblue);
+}
+
+.submit,
+.annuler {
+    color: var(--couleur-lightcyan);
+    width: 100px;
+    margin: 0 1em;
+}
+
+.annuler {
+    background-color: var(--couleur-darkgreen);
+}
+
+.marg {
+    display: flex;
+    justify-content: center;
+}
+
+.imageP {
+    background-image: url("../../images/illustration fille.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90%;
+    grid-column: 2/3;
+}
+
+.imageM {
+    background-image: url("../../images/illustration doc.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90%;
+    background-position: center;
+    grid-column: 2/3;
+}
+
+.iden {
+    margin-left: 0.5em;
+    color: var(--couleur-green);
+}
+
+.section-identif {
+    margin-top: 2em;
+    justify-content: center;
+}
+
+.section-identif p {
+    color: var(--couleur-darkblue);
+}
+
+.section-inscriptionM>* {
+    margin: 1em 0;
+}
+
+.section-inscriptionM {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    color: red;
+}

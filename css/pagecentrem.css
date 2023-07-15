@@ -1,0 +1,778 @@
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color:#F0F4F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Fredoka, 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+
+nav {
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 5px;
+    position: fixed;
+}
+
+.nav-content {
+	width: 100vw;
+	height: 8vh;
+	background-color: transparent;
+	display: block;
+	background-color: white;
+	margin-top: 0px;
+    box-shadow: 0 1px 5px 0 rgb(41 85 115 / 21%);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#logo {
+	float: left;
+	padding: 8px 0px 8px 20px;
+	display: flex;
+	align-items: center;
+    width:8vw;
+}
+
+#logo img {
+	width: 80px;
+	margin-right: 15px;
+	align-items: center;
+}
+
+#logo h1 {
+	color: rgb(83, 81, 81);
+	font-family: sans-serif, Arial, Helvetica;
+	position: relative;
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+nav ul {
+	list-style: none;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0px;
+}
+
+nav ul li {
+	padding: 0px 4px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	transition: 0.2s;
+}
+
+nav ul li .box{
+    border-radius: 20px;
+    height: 5vh;
+    width: 15vw;
+    border: 1px solid #C1E4FE;
+    background-color: #EAF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li .box:hover{
+    background-color:#daeeff;
+}
+
+nav ul li .box input{
+    width: 90%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+.box-after-click{
+    border-radius: 20px;
+    height: 5vh;
+    width: 15vw;
+    border: 1px solid #679dc7;
+    background-color: #EAF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 4px 2px #86bff1;
+}
+nav ul li .box-after-click input{
+    width: 90%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgb(85, 84, 84);
+	font-family:Fredoka,'Poppins', sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	border-radius: 0px;
+	padding: 10px 10px;
+	transition: .3s ease-out;
+}
+
+nav ul li a:hover {
+	opacity: 0.7;
+	border-radius: 10px;
+    color: #3899EC;
+}
+
+li.active {
+    background-color: #F4FAFE;
+    border: 1px solid #d0dde6;
+}
+li.active a:hover{
+    color: rgb(85, 84, 84);
+}
+a.active:hover{
+    border: 2px solid rgb(83, 81, 81);
+    border-bottom: 2px solid blanchedalmond;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    opacity: 1;
+    border-radius: 0;
+
+}
+
+nav ul li:hover {
+	transform: scale(1);
+}
+
+.burger {
+	float: right;
+	padding: 25px 40px 25px 0px;
+	display: none;
+}
+
+.burger div {
+	display: flex;
+	width: 25px;
+	height: 3px;
+	background-color: rgb(83, 81, 81);
+	margin: 5px;
+}
+
+
+.first-list{
+    float: left;
+}
+.second-list{
+    float: right;
+}
+
+
+
+
+
+
+
+.content-hero{
+    width: 100vw;
+    display: inline-block;
+}
+
+.navbar-left{
+    position: fixed;
+    top: 8vh;
+    width: 20vw;
+    height: 92vh;
+    background-color: #131720;
+}
+
+.navbar-left .top{
+    width: 100%;
+    height: 2vh;
+    background-color: transparent;
+}
+.navbar-left .buttom{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-left .buttom div{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-left .buttom div:hover{
+    background-color: #252a35;
+    color: white;
+}
+.navbar-left .buttom div button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 540;
+    background-color: transparent;
+    color: #CFD0C7;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+}
+.navbar-left .buttom div button:hover{
+    color: white;
+    background-color: #252a35;
+}
+
+.navbar-left .buttom div button span{
+    margin-left: 2vw;
+}
+
+
+
+.cotent-right{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 80vw;
+    float: right;
+    margin-top: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.detail-block{
+    background-color: white;
+    margin-top: 10px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 70vw;
+}
+.medcin-list{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.troix-card-medecin{
+    background-color: transparent;
+    width: 100%;
+    gap: 3vh;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.un-medecin-card{
+    background-color: white;
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    height: 85%;
+}
+
+.card-medecin-header{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.img-medecin{
+    width: 65px;
+    height: 65px;
+    background-color: #454545;
+    border-radius: 50%;
+}
+.info-general h5{
+    color: #80A2CE;
+}
+
+.card-medecin-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    min-height: 60%;
+    background-color: transparent;
+}
+.card-medecin-infos h5{
+    color: #000000;
+    font-size:15px;
+}
+.card-medecin-infos p{
+    color: #9090B5;
+    font-size: 14px;
+}
+.card-rdv-d{
+    background-color: #F0F4F7;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px;
+    width: 100%;
+    height: 20vh;
+    box-shadow: 0 0 5px 0 rgb(41 85 115 / 21%);
+}
+.annuler-rdv-btn-d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #e6edff;
+    border-radius: 30px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    height: 50px;
+    transition: all 200ms ease-in-out;
+    border: 0;
+    box-shadow: 0 0 5px 0 rgb(41 85 115 / 25%);
+}
+.annuler-rdv-btn-d:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.content-home{
+    display: none;
+    width: 80vw;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.voir-trdv-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #131720;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    width: 250px;
+    height: 40px;
+    transition: all 200ms ease-in-out;
+}
+.voir-trdv-btn:hover{
+    background-color: #292f3d;
+}
+
+.voir-trdv-btn button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 540;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.container-medcins{
+    display: none;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0px;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.ajouter-container{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.ajouter-container h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #162D3D;
+}
+.ajouter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #3899EC;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    width: 180px;
+    height: 35px;
+    transition: all 200ms ease-in-out;
+}
+
+.ajouter:hover{
+    background-color: #5cb0fa;
+
+}
+
+.ajouter-block{
+    display: none;
+    width: 75vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 0 5px 0 rgb(41 85 115 / 21%);
+}
+.red{
+    color: red;
+}
+.ajouter-block form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ajouter-block form button{
+    border: 0;
+
+}
+
+.table-ajouter-medecin{
+    border-collapse: collapse;
+}
+
+.table-ajouter-medecin tr{
+    border-radius: 0px;
+    background-color: #fff;
+    margin-top: 0px;
+    outline: 2px;
+    cursor: pointer;
+    color: #162D3D;
+    height: 8vh;
+}
+.table-ajouter-medecin tr:hover{
+    background-color: #eef2f5;
+}
+.table-ajouter-medecin td{
+    width: 35vw;
+    height: 6vh;
+}
+
+
+.ajouter-block input{
+    width: 30vw;
+    height: 5vh;
+}
+.ajouter-block label{
+    background-color: transparent;
+}
+
+.ajouter-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #4ec92f;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    width: 120px;
+    height: 35px;
+    transition: all 200ms ease-in-out;
+    margin-top: 20px;
+}
+
+.ajouter-btn:hover{
+    background-color: #55da34;
+
+}
+
+
+
+
+.table-medecin{
+    border-collapse: collapse;
+    box-shadow: 0 0 5px 0 rgb(41 85 115 / 21%);
+}
+
+.table-medecin tr{
+    border-radius: 0px;
+    width: 75vw;
+    background-color: #fff;
+    margin-top: 0px;
+    border-bottom: 2px solid #F0F4F7;
+    outline: 2px;
+    cursor: pointer;
+    color: #162D3D;
+}
+.table-medecin tr:hover{
+    background-color: #eef2f5;
+}
+.table-medecin td{
+    height: 6vh;
+}
+.table-medecin .table-top,
+.table-medecin .table-top:hover{
+    background-color: #DAEFFE;
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    min-width: 10vw;
+}
+
+.content-img{
+    display: flex;
+    width: 6vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #162D3D;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    color: aliceblue;
+    border-radius: 50%;
+    
+}
+.medcin-infos{
+    display: flex;
+    background-color: transparent;
+    flex-direction:column;
+    justify-content:center;
+    align-items: flex-start;
+    min-width: 20vw;
+}
+
+.np {
+    font-size: 20px;
+    font-family:monospace;
+}
+.info-rdv {
+    font-size: 18px;
+    width: 20vw;
+    background-color: transparent;
+}
+
+.right{
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:25vw;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.btn {
+    cursor: pointer;
+    color: white;
+    transition: all 200ms ease-in-out;
+    border: 0;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(49, 161, 49);
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    transition: all 200ms ease-in-out;
+}
+.detail:hover {
+    background-color: rgb(69, 185, 69);
+}
+
+
+.editer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #AA4DC8;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    transition: all 200ms ease-in-out;
+}
+.editer:hover {
+    background-color: #c26bdf;
+}
+
+.effacer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(212, 32, 32);
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    transition: all 200ms ease-in-out;
+}
+.effacer:hover {
+    background-color: red;
+}
+
+
+.content-rdv{
+    display: none;
+    width: 80vw;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    background-color: transparent;
+    gap: 15px;
+}
+
+.header-rdv-container{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.header-rdv-container h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #162D3D;
+}
+.card-rdv{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px;
+    width: 75vw;
+    height: 20vh;
+    box-shadow: 0 0 5px 0 rgb(41 85 115 / 21%);
+}
+.card-rdv-info-left{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.card-rdv-date-info-centre{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    background-color: transparent;
+}
+.card-rdv-info-right{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: transparent;
+}
+.annuler-rdv-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #e6edff;
+    border-radius: 30px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    height: 50px;
+    transition: all 200ms ease-in-out;
+    border: 0;
+}
+.annuler-rdv-btn:hover {
+    background-color: red;
+    color: white;
+}

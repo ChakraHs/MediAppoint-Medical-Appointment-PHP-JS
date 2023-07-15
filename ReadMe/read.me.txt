@@ -1,0 +1,3 @@
+first pose ce dossier pfe dans votre dossier htdocs (XAMPP) ou .WEB (WAMP) ...
+cree la base de donnes "medicalg" dans votre php my admin
+export le file medicalg.sql

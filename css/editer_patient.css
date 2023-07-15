@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color:#F0F4F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Fredoka, 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+
+nav {
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 5px;
+    position: fixed;
+    z-index: 6;
+    box-shadow: 0 1px 5px 0 rgb(41 85 115 / 21%);
+}
+
+.nav-content {
+	width: 96vw;
+	height: 8vh;
+	background-color: transparent;
+	display: block;
+	margin-top: 0px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#logo {
+	float: left;
+	padding: 8px 0px 8px 20px;
+	display: flex;
+	align-items: center;
+    width:8vw;
+}
+
+#logo img {
+	width: 80px;
+	margin-right: 15px;
+	align-items: center;
+}
+
+#logo h1 {
+	color: rgb(83, 81, 81);
+	font-family: sans-serif, Arial, Helvetica;
+	position: relative;
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+nav ul {
+	list-style: none;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0px;
+}
+
+nav ul li {
+	padding: 0px 4px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	transition: 0.2s;
+}
+
+nav ul li .box{
+    border-radius: 20px;
+    height: 5vh;
+    width: 15vw;
+    border: 1px solid #C1E4FE;
+    background-color: #EAF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li .box:hover{
+    background-color:#daeeff;
+}
+
+nav ul li .box input{
+    width: 90%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+.box-after-click{
+    border-radius: 20px;
+    height: 5vh;
+    width: 15vw;
+    border: 1px solid #679dc7;
+    background-color: #EAF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 4px 2px #86bff1;
+}
+nav ul li .box-after-click input{
+    width: 90%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgb(85, 84, 84);
+	font-family:Fredoka,'Poppins', sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	border-radius: 0px;
+	padding: 10px 10px;
+	transition: .3s ease-out;
+}
+
+nav ul li a:hover {
+	opacity: 0.7;
+	border-radius: 10px;
+    color: #3899EC;
+}
+
+li.active {
+    background-color: #F4FAFE;
+    border: 1px solid #d0dde6;
+}
+li.active a:hover{
+    color: rgb(85, 84, 84);
+}
+a.active:hover{
+    border: 2px solid rgb(83, 81, 81);
+    border-bottom: 2px solid blanchedalmond;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    opacity: 1;
+    border-radius: 0;
+
+}
+
+nav ul li:hover {
+	transform: scale(1);
+}
+
+.burger {
+	float: right;
+	padding: 25px 40px 25px 0px;
+	display: none;
+}
+
+.burger div {
+	display: flex;
+	width: 25px;
+	height: 3px;
+	background-color: rgb(83, 81, 81);
+	margin: 5px;
+}
+
+
+.first-list{
+    float: left;
+}
+.second-list{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.information{
+    background-color: transparent;
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+	margin-top: 12vh;
+}
+
+.information-container{
+    width: 100vw;
+    height: 88vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.titre-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-titre{
+    color: red;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    min-height: 18vh;
+    margin-top: 18px;
+}
+.info-con h4{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    font-weight: bold;
+}
+.info-con .un-input{
+    width: 90%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.info-con .un-input input{
+    border: 0;
+    outline: 0;
+    width: 45%;
+    height: 50%;
+    background-color: transparent;
+    border-bottom: 1px solid #B7B7B7;
+    text-align:buttom;
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+}
+.info-con .deux-inputs{
+    width: 90%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-con .deux-inputs .input-con{
+    width: 45%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+}
+.info-con .deux-inputs .input-con input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    border-bottom: 1px solid #B7B7B7;
+    text-align:buttom;
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+
+}
+::placeholder {
+    color: #B7B7B7;
+    font-weight: bold;
+}
+
+.deux-inputs-check{
+    width: 90%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-edit-container{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: red;
+}
+
+.enregistre-btn-container{
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enregistre-btn{
+    background-color: #AA4DC8;
+    border: 0;
+    width: 10vw;
+    height: 6vh;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 0 5px 0 rgb(41 85 115 / 21%);
+    transition: all 200ms ease-in-out;
+}
+.enregistre-btn:hover{
+    background-color: #b952db;
+}
+
+.red{
+    color: red;
+    margin-top: 10px;
+}

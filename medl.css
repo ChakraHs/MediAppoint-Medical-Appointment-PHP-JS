@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color:#F0F4F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Fredoka, 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.medcin-list{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+}
+.troix-card-medecin{
+    background-color: transparent;
+    width: 90vw;
+    gap: 3vh;
+    height: 45vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.un-medecin-card{
+    background-color: white;
+    width: 32%;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 0 rgb(41 85 115 / 21%);
+
+}
+
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 90%;
+    height: 90%;
+}
+
+.card-medecin-header{
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.img-medecin{
+    width: 65px;
+    height: 65px;
+    background-color: #454545;
+    border-radius: 50%;
+}
+.info-general h5{
+    color: #80A2CE;
+}
+
+.card-medecin-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    min-height: 50%;
+    background-color: transparent;
+    border-bottom: 2px solid #E5E5E5;
+}
+.card-medecin-infos h5{
+    color: #000000;
+    font-size:15px;
+}
+.card-medecin-infos p{
+    color: #9090B5;
+    font-size: 14px;
+}
+.prendre-rdv-lien{
+    min-height: 20%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #00CED0;
+}
+
+.prendre-rdv-lien h4{
+    color: #00CED0;
+}
+.prendre-rdv-lien h4{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+[type=submit]{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00CED0;
+}
+.none{
+    display: none;
+}
+
+.videRdv{
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.videRdv button {
+	position: static;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.1rem;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #4CAF50;
+	padding: 0px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-top: 20px;
+	line-height: 90%;
+	border-radius: 0.2rem;
+	flex-shrink: 0;
+	min-height: 4.12rem;
+	font-size: 1.4rem;
+	max-width: 60vw;
+	min-width: 40vw;
+	margin-bottom: 15px;
+}
+.videRdv button a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}

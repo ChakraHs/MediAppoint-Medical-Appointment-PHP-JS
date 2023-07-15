@@ -1,0 +1,255 @@
+:root {
+    --couleur-darkgreen: #4d7368;
+    --couleur-lightcyan: #d9e5e1;
+    --couleur-darkblue: #000038;
+    --couleur-green: #8fbf78;
+    --couleur-white: white;
+    --couleur-black: black;
+    --fontfamily-poppins: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color:blanchedalmond;
+}
+
+
+nav {
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 5px;
+	background-color: blanchedalmond;
+	gap: 5px;
+}
+
+.nav-content {
+	width: 1250px;
+	height: 50px;
+	background-color: transparent;
+	display: block;
+	background-color: white;
+	margin-top: 0px;
+    border-bottom: 2px solid black;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#logo {
+	float: left;
+	padding: 8px 0px 8px 20px;
+	display: flex;
+	align-items: center;
+}
+
+#logo img {
+	width: 80px;
+	margin-right: 15px;
+	align-items: center;
+}
+
+#logo h1 {
+	color: rgb(83, 81, 81);
+	font-family: sans-serif, Arial, Helvetica;
+	position: relative;
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0px;
+}
+
+nav ul li {
+	padding: 0px 4px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	transition: 0.2s;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgb(85, 84, 84);
+	font-family:Fredoka,'Poppins', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	border-radius: 0px;
+	padding: 5px 10px;
+	transition: .3s ease-out;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	opacity: 0.7;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+a.active {
+	border: 2px solid rgb(83, 81, 81);
+    border-bottom: 2px solid blanchedalmond;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: blanchedalmond;
+}
+a.active:hover{
+    border: 2px solid rgb(83, 81, 81);
+    border-bottom: 2px solid blanchedalmond;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    opacity: 1;
+    border-radius: 0;
+
+}
+
+nav ul li:hover {
+	transform: scale(1);
+}
+
+.burger {
+	float: right;
+	padding: 25px 40px 25px 0px;
+	display: none;
+}
+
+.burger div {
+	display: flex;
+	width: 25px;
+	height: 3px;
+	background-color: rgb(83, 81, 81);
+	margin: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    background-color: var(--couleur-green);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.marg {
+    margin: 0 5em;
+}
+
+.inp {
+    height: 36.6px;
+    width: 200px;
+    border: none;
+    padding: 0 1em;
+    font-family: var(--fontfamily-poppins);
+}
+
+html {
+    font-family: var(--fontfamily-poppins);
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+.marg {
+    margin: 0 5rem;
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--couleur-green);
+}
+
+.liens a+a {
+    margin-left: 1em;
+}
+
+#drop {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 70vw 30vw;
+    grid-template-rows: 10vh 90vh;
+}
+
+.grid-deux {
+    display: grid;
+    grid-template-columns: 80vw 20vw;
+    grid-template-rows: 10vh 90vh;
+}
+
+.sec-grid {
+    display: grid;
+}
+
+.image-de-fond {
+    background: url("images/illustration\ page\ doc1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.fond-vert-light {
+    background: url("images/background-light.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    z-index: -2;
+}
+
+h2 {
+    text-align: center;
+    margin: 1em 0;
+    color: var(--couleur-darkblue);
+}
+
+h3 {
+    margin: 2em 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.card {
+    border-bottom: 2px solid var(--couleur-darkblue);
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.annuler {
+    color: var(--couleur-lightcyan);
+    font-weight: bold;
+    border-radius: 0;
+    background-color: var(--couleur-darkgreen);
+    transition: all 200ms ease-in-out;
+}
+
+.annuler:hover {
+    background-color: var(--couleur-darkblue);
+}

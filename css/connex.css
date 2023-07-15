@@ -1,0 +1,151 @@
+:root {
+    --couleur-darkgreen: #4d7368;
+    --couleur-lightcyan: #d9e5e1;
+    --couleur-darkblue: #000038;
+    --couleur-green: #8fbf78;
+    --couleur-white: white;
+    --couleur-black: black;
+    --fontfamily-poppins: "Poppins", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: var(--fontfamily-poppins);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.layout a {
+    text-decoration: none;
+    color: #23916c;
+    transition: all 200ms ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn {
+    padding: 0.4em 0.8em;
+    background-color: #23916c;
+    border-radius: 20px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+}
+
+.inp {
+    height: 36.6px;
+    width: 200px;
+    border: none;
+    padding: 0 1em;
+    font-family: var(--fontfamily-poppins);
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 60vh;
+    margin-top: 15vh;
+}
+
+.connexion {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 4em 0 4em;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+.text {
+    flex-direction: column;
+}
+
+.nom-util,
+.mdp,
+.connect {
+    display: block;
+    margin: 1em 0;
+}
+
+.connect {
+    color: white;
+    font-family: var(--fontfamily-poppins);
+}
+
+.nom-util,
+.mdp {
+    width: 400px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.iden {
+    color: green;
+}
+
+.section-connect>* {
+    margin: 1em 0;
+}
+
+.section-connect {
+    grid-row: 1/2;
+}
+
+.section-identif {
+    margin: 2em 0;
+    justify-content: center;
+    grid-row: 3/4;
+    color: #000038;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect {
+    font-size: 1rem;
+    display: block;
+    width: 400px;
+    transition: all 300ms ease-in-out;
+}
+
+h2 {
+    color: var(--couleur-darkgreen);
+}
+
+img {
+    width: 50vw;
+    height: 80vh;
+}
+
+.iden {
+    margin-left: 0.5em;
+}
+
+.fa-eye-slash {
+    display: none;
+}
+
+.red {
+    color: red;
+}
+
+a:hover {
+    color: var(--couleur-darkgreen);
+}
+
+.connect:hover {
+    background-color: var(--couleur-darkgreen);
+}
